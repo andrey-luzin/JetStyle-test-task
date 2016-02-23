@@ -1,1 +1,1 @@
-"# VseYasno" 
+#VseYasno

@@ -1,0 +1,40 @@
+@import "../utils/variables";
+
+.companies {
+  height: calc(100% - 57px);
+  width: 380px;
+  float: left;
+  background-color: #fff;
+  border-right: 1px solid $lGray;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &__letter {
+    background-color: #eeeeee;
+    color: #818181;
+    font-size: 20px;
+    padding: 4px 10px;
+
+    &--isActive {
+      color: $gray;
+    }
+  }
+}
+
+.companyItem {
+  padding: 25px 28px 35px;
+  border-top: 1px solid $lGray;
+
+  .companies__letter + & {
+    border: none;
+  }
+
+  &__title {
+    font-size: 20px;
+    letter-spacing: 1.25px;
+  }
+
+  &_address {
+    letter-spacing: 1.25px;
+  }
+}

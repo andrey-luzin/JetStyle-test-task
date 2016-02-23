@@ -1,0 +1,21 @@
+@import "../utils/_mixins/transitions";
+
+.list {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  left: 0;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255,255,255,.7);
+  @include transitionFull(all 2s ease-out);
+
+  .wrapper--listOpened & {
+    opacity: 1;
+    visibility: visible;
+  } 
+}

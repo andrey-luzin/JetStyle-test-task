@@ -1,0 +1,13 @@
+$backLinkColor: #a0a0a0;
+
+.backLink {
+  width: 15px;
+  height: 15px;
+  border-left: 3px solid $backLinkColor;
+  border-bottom: 3px solid $backLinkColor;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  &__inner {
+    width: 756px;
+    margin: auto;
+  }
+}

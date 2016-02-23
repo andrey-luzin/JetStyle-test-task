@@ -1,0 +1,21 @@
+%before {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+%after {
+  position: relative;
+  z-index: 1;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+  }
+}

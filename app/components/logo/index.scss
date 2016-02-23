@@ -1,0 +1,20 @@
+.logo {
+  background-image: url(imgs/logo.png);
+  position: fixed;
+  width: 79px;
+  height: 42px;
+  background-size: cover;
+  right: 27px;
+  bottom: 27px;
+  z-index: 0;
+  filter: blur(0.5px);
+
+  .list & {
+    filter: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    margin: auto;
+  }
+}

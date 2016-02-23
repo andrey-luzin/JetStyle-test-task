@@ -1,0 +1,47 @@
+@import "../utils/variables";
+
+.search {
+  display: flex;
+
+  &__input {
+    background-image: url(imgs/magnifier.png);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    border: none;
+    border-bottom: 2px solid $green;
+    background-position: 0 5px;
+    padding: 0px 0 15px 60px;
+    flex-grow: 2;
+    font-size: 20px;
+    color: $gray;
+    height: 57px;
+    letter-spacing: 1.25px;
+  }
+
+  &__button {
+    height: 42px;
+    background-color: #fff;
+    border: 2px solid $green;
+    border-radius: 3px;
+    color: $green;
+    margin-left: 13px;
+    padding: 0px 15px;
+  }
+
+  .list & {
+    border-bottom: 1px solid $lGray;
+    padding-left: 71px;
+    padding-top: 15px;
+    padding: 0 15px 0 71px;
+
+    .search__input {
+      padding-top: 15px;
+      background-position: 0 10px;
+      border: none;
+    }
+
+    .search__button {
+      display: none;
+    }
+  }
+}

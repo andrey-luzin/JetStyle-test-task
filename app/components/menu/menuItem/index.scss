@@ -1,0 +1,109 @@
+@import "../../utils/_mixins/transitions";
+
+.menuItem {
+  list-style: none;
+  display: inline-block;
+  width: 125px;
+  margin-right: 70px;
+  vertical-align: top;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  &__image {
+    width: 125px;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 45%;
+    background-repeat: none;
+    border-radius: 100%;
+  }
+
+  &__text {
+    width: 100px;
+    margin: 30px auto 0;
+    text-align: center;
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  &--isAnimate {
+    .menuItem__image {
+      animation: circleTransform 3s ease-in both;
+      z-index: 1000; 
+    }
+  }
+
+  &--cafe {
+    .menuItem__image {
+      background-image: url(imgs/coffee.png);
+    }
+  }
+
+  &--conference {
+    .menuItem__image {
+      background-image: url(imgs/conference.png);
+    }
+  }
+
+  &--shop {
+    .menuItem__image {
+      background-image: url(imgs/shop.png);
+    }
+  }
+
+  &--salon {
+    .menuItem__image {
+      background-image: url(imgs/salon.png);
+    }
+  }
+
+  &--auto {
+    .menuItem__image {
+      background-image: url(imgs/auto.png);
+    }
+  }
+
+  &--parking {
+    .menuItem__image {
+      background-image: url(imgs/parking.png);
+    }
+  }
+
+  &--management {
+    .menuItem__image {
+      background-image: url(imgs/house.png);
+      background-size: 50%;
+    }
+  }
+
+  &--sales {
+    .menuItem__image {
+      background-image: url(imgs/key.png);
+      background-size: 20%;
+    }
+  }
+}
+
+@keyframes circleTransform {
+  5% {
+    background-size: 0px;
+  }
+
+  70% {
+    transform: scale(20);
+    background-size: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
+    background-size: 0px;
+    z-index: 100;
+  }
+}
