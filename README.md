@@ -1,4 +1,4 @@
-# Все ясно
+# JetStyle
 
 ## Dependencies
 * [npm](https://www.npmjs.com/)
