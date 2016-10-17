@@ -1,5 +1,5 @@
 {
-  "name": "VseYasno",
+  "name": "JetStyle Test Task",
   "version": "1.0.0",
   "description": "Тестовое задание",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrey-luzin/VseYasno"
+    "url": "https://github.com/andrey-luzin/JetStyle-test-task"
   },
   "author": "Andrey Luzin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/andrey-luzin/VseYasno/issues"
+    "url": "https://github.com/andrey-luzin/JetStyle-test-task/issues"
   },
-  "homepage": "https://github.com/andrey-luzin/VseYasno",
+  "homepage": "https://github.com/andrey-luzin/JetStyle-test-task",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.5.1",
